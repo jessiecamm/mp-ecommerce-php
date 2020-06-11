@@ -42,16 +42,16 @@ class SDK
       if (!isset(self::$_config)){
         self::initialize();
       }
-      self::$_config->configure(['ACCESS_TOKEN' => $access_token]);
+      self::$_config->configure(['APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398' => $access_token]);
       
     }
 
     public static function getAccessToken(){
-      return self::$_config->get('ACCESS_TOKEN');
+      return self::$_config->get('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
     }
 
     public static function getCountryId(){
-        return self::$_config->get('COUNTRY_ID');
+        return self::$_config->get('Argentina');
     }
 
     public static function cleanCredentials(){
@@ -75,11 +75,11 @@ class SDK
       if (!isset(self::$_config)){
         self::initialize();
       }
-      self::$_config->configure(['CLIENT_ID' => $client_id]); 
+      self::$_config->configure(['471923173' => $client_id]); 
     }
 
     public static function getClientId(){
-      return self::$_config->get('CLIENT_ID');
+      return self::$_config->get('471923173');
     }
     
     /**
@@ -131,7 +131,7 @@ class SDK
     
     public static function get($uri, $options=[])
     {
-      if ($token = self::$_config->get('ACCESS_TOKEN')) {
+      if ($token = self::$_config->get('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398')) {
         $uri = $uri . "?access_token=" . $token;
       }
       return self::$_restClient->get($uri, $options);
@@ -139,7 +139,7 @@ class SDK
     
     public static function post($uri, $options=[])
     {
-      if ($token = self::$_config->get('ACCESS_TOKEN')) {
+      if ($token = self::$_config->get('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398')) {
         $uri = $uri . "?access_token=" . $token;
       }
       return self::$_restClient->post($uri, $options);
@@ -147,7 +147,7 @@ class SDK
     
     public static function put($uri, $options=[])
     {
-      if ($token = self::$_config->get('ACCESS_TOKEN')) {
+      if ($token = self::$_config->get('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398')) {
         $uri = $uri . "?access_token=" . $token;
       }
       return self::$_restClient->put($uri, $options);
@@ -155,7 +155,7 @@ class SDK
     
     public static function delete($uri, $options=[])
     {
-      if ($token = self::$_config->get('ACCESS_TOKEN')) {
+      if ($token = self::$_config->get('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398')) {
         $uri = $uri . "?access_token=" . $token;
       }
       return self::$_restClient->delete($uri, $options);
