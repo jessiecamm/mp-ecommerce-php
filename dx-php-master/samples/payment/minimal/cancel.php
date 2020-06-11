@@ -2,7 +2,7 @@
   
   require_once dirname(__FILE__) . '/../../index.php';
   
-  $config->set('ACCESS_TOKEN', 'ACCESS_TOKEN');
+  $config->set('TEST-2732047088252149-080516-1f121aa69d78d4e8a526ea8bfb67783c-45061754', 'TEST-2732047088252149-080516-1f121aa69d78d4e8a526ea8bfb67783c-45061754');
 
   # Create a Payment
   require_once dirname(__FILE__) . '/create.php';
