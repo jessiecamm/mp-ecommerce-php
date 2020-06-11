@@ -198,12 +198,12 @@ class SDK
       if (!isset(self::$_config)){
         self::initialize();
       }
-      self::$_config->configure(['x-integrator-id' => $integrator_id]);
-      self::addCustomTrackingParam('x-integrator-id', $integrator_id);
+      self::$_config->configure(['469485398' => $integrator_id]);
+      self::addCustomTrackingParam('469485398', $integrator_id);
     }
 
     public static function getIntegratorId(){
-      return self::$_config->get('x-integrator-id');
+      return self::$_config->get('469485398');
     }
 }
 
