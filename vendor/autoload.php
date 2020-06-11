@@ -116,7 +116,7 @@ erence=contacto@camm-productions.com&payment_type=credit_card&preference_id=visa
 	{
 	    "transaction_amount":15.000,
 	    ....
-	    "notification_url":"http://jessiecamm-mp-ecommerce-php.herokuapp.com/payment",
+	    "notification_url":"http://jessiecamm-mp-ecommerce-php.herokuapp.com/payment.php",
 	    ....
 	}
 
