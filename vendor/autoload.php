@@ -21,9 +21,9 @@ MercadoPago\SDK::setAccessToken("APP_USR-6317427424180639-042414-47e969706991d3a
 
     $payment = new MercadoPago\Payment();
     
-    $payment->transaction_amount = 141;
+    $payment->transaction_amount = 15.000;
     $payment->token = "YOUR_CARD_TOKEN";
-    $payment->description = "Ergonomic Silk Shirt";
+    $payment->description = "Samsung Galaxy S9";
     $payment->installments = 1;
     $payment->payment_method_id = "visa";
     $payment->payer = array(
@@ -39,7 +39,7 @@ MercadoPago\SDK::setAccessToken("APP_USR-6317427424180639-042414-47e969706991d3a
 	$preference = new MercadoPago\Preference();
 	// ...
 	$preference->payment_methods = array(
-	  "excluded_payment_methods" => array(amex,atm);
+	  "excluded_payment_methods" => array(
 	    array("id" => "amex,atm")
 	  ),
 	  "excluded_payment_types" => array(
@@ -104,7 +104,7 @@ erence=contacto@camm-productions.com&payment_type=credit_card&preference_id=visa
         ],
         "installments": 6
     },
-    "notification_url": "https://jessiecamm-mp-ecommerce-php.herokuapp.com/ipn",
+    "notification_url": "https://jessiecamm-mp-ecommerce-php.herokuapp.com/ipn.php",
     "external_reference": "contacto@camm-productions.com",
     "expires": true,
     "expiration_date_from": "2020-06-11T12:00:00.000-04:00",
@@ -116,7 +116,7 @@ erence=contacto@camm-productions.com&payment_type=credit_card&preference_id=visa
 	{
 	    "transaction_amount":15.000,
 	    ....
-	    "notification_url":"http://jessiecamm-mp-ecommerce-php.herokuapp.com/payment.php",
+	    "notification_url":"http://jessiecamm-mp-ecommerce-php.herokuapp.com/ipn.php",
 	    ....
 	}
 
