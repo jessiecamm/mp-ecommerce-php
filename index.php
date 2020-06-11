@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="./assets/fonts" media="">
     <style>
         .as-filter-button-text {
-            text: "Pagar la compra";
             font-size: 26px;
             font-weight: 700;
             color: #333;
